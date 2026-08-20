@@ -1,8 +1,6 @@
-// Show a message when the page loads
 console.log("Portfolio website loaded successfully!");
 
 
-// Example button interaction
 const buttons = document.querySelectorAll(".btn");
 
 buttons.forEach(function (button) {
@@ -11,10 +9,6 @@ buttons.forEach(function (button) {
     });
 });
 
-
-// --- Dark / Light Mode Toggle ---
-// Theme is applied before first paint by an inline script in <head>;
-// this just wires up the button and persists the user's choice.
 
 const themeToggle = document.getElementById("theme-toggle");
 const root = document.documentElement;
@@ -41,7 +35,7 @@ if (themeToggle) {
 }
 
 
-// --- Mobile Nav Toggle ---
+
 
 const navToggle = document.getElementById("nav-toggle");
 const navLinks = document.getElementById("nav-links");
@@ -66,8 +60,7 @@ if (navToggle && navLinks) {
 }
 
 
-// --- Active Section Highlighting ---
-// Highlights the nav link for whichever section is currently in view.
+
 
 const sections = document.querySelectorAll("section[id]");
 const navAnchors = document.querySelectorAll(".nav-links a");
@@ -89,7 +82,7 @@ if (sections.length && navAnchors.length && "IntersectionObserver" in window) {
             });
         },
         {
-            // Counts a section as "current" once it crosses the upper-middle of the viewport
+            
             rootMargin: "-40% 0px -55% 0px",
             threshold: 0,
         }

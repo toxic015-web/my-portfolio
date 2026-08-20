@@ -11,17 +11,11 @@ html {
 }
 
 
-/* =========================================================
-   THEME VARIABLES (Light default, Dark override)
-   Same navy/blue color identity in both modes — only the
-   surfaces flip, the accent blue and overall system stay put.
-   ========================================================= */
-
 :root {
   --color-bg: #f5f7fa;
-  --color-bg-alt: #f8fafc;       /* hero background */
-  --color-surface: #ffffff;      /* cards */
-  --color-surface-muted: #f8fafc; /* "next skills" / "in progress" cards */
+  --color-bg-alt: #f8fafc;       
+  --color-surface: #ffffff;      
+  --color-surface-muted: #f8fafc; 
 
   --color-border: #e2e8f0;
   --color-border-strong: #cbd5e1;
@@ -106,13 +100,13 @@ body {
 
 /* Top-Level Header Container */
 header {
-  position: fixed; /* Keeps navbar pinned to the top while scrolling */
+  position: fixed; 
   top: 0;
   left: 0;
   width: 100%;
   background-color: var(--color-nav-bg);
   box-shadow: var(--shadow-header);
-  z-index: 1000; /* Stays on top of hero elements */
+  z-index: 1000;
   box-sizing: border-box;
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
   transition: background-color 0.25s ease;
@@ -124,9 +118,9 @@ header {
   justify-content: space-between;
   align-items: center;
   gap: 1.5rem;
-  max-width: 1200px; /* Keeps content centered nicely on ultra-wide screens */
-  margin: 0 auto; /* Centers the inner content bounding box */
-  padding: 1.25rem 2rem; /* Creates perfect padding room at the top/bottom and sides */
+  max-width: 1200px; 
+  margin: 0 auto; 
+  padding: 1.25rem 2rem; 
 }
 
 /* Logo Lockup: monogram badge + wordmark */
@@ -175,24 +169,24 @@ header {
 /* Unordered List Links Wrapper */
 .nav-links {
   display: flex;
-  gap: 2rem; /* Even, uniform gaps between menu text */
-  list-style: none; /* Removes bullet points */
+  gap: 2rem; 
+  list-style: none; 
   margin: 0 auto 0 2rem;
   padding: 0;
 }
 
 /* Anchor Link Tags */
 .nav-links a {
-  text-decoration: none; /* Removes underline style */
+  text-decoration: none;
   font-size: 0.95rem;
   font-weight: 500;
-  color: var(--color-nav-link); /* Professional muted grey */
+  color: var(--color-nav-link); 
   transition: color 0.2s ease-in-out;
 }
 
 /* Interactive Link Hover Effect */
 .nav-links a:hover {
-  color: var(--color-nav-text); /* Brightens cleanly on hover */
+  color: var(--color-nav-text); 
 }
 
 /* Currently-viewed section's nav link */
@@ -280,8 +274,7 @@ header {
 [data-theme="dark"] .theme-toggle .icon-sun { display: block; }
 [data-theme="dark"] .theme-toggle .icon-moon { display: none; }
 
-/* Main Content Spacing Reset 
-   Add this selector to your global file so your hero text doesn't slide under the header */
+/* Main Content Spacing Reset */
 body {
   padding-top: 4.5rem; 
 }
@@ -336,22 +329,21 @@ body {
 
 /* Typography Hierarchy */
 .hero-text .small-text {
-  /* 3. SET THE UNIQUE DEVELOPER MONOSPACE GREETING */
   font-family: 'JetBrains Mono', monospace;
   font-size: 1rem;
   font-weight: 600;
   color: var(--color-text-muted); 
   margin-bottom: 0.75rem;
   text-transform: uppercase;
-  letter-spacing: 0.08em; /* Slightly wider tracking for the mono font */
+  letter-spacing: 0.08em; 
 }
 
 .hero-text h1 {
   font-size: 3.5rem;
-  font-weight: 800; /* Extra bold look for your name */
+  font-weight: 800; 
   color: var(--color-text-primary); 
   margin-bottom: 0.75rem;
-  letter-spacing: -0.03em; /* Tight letter spacing looks ultra-premium */
+  letter-spacing: -0.03em; 
 }
 
 .hero-text h2 {
@@ -427,11 +419,11 @@ body {
 
 /* --- Global Section Base Styling --- */
 .section {
-  padding: 5rem 2rem; /* Adds generous breathing room above and below sections */
-  max-width: 1100px;  /* Keeps the content bounded nicely on wide screens */
-  margin: 0 auto;     /* Centers the entire section bounding box */
-  text-align: center; /* Centers section headings */
-  font-family: 'Plus Jakarta Sans', system-ui, sans-serif; /* Matches your hero font */
+  padding: 5rem 2rem; 
+  max-width: 1100px;  
+  margin: 0 auto;    
+  text-align: center; 
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif; 
 }
 
 /* Section Headings Layout */
@@ -445,8 +437,8 @@ body {
 
 /* About Me Paragraph Text Restraints */
 .about-content {
-  max-width: 750px; /* Crucial: Prevents sentences from stretching too wide */
-  margin: 0 auto; /* Centers the limited paragraph block */
+  max-width: 750px; 
+  margin: 0 auto; 
   text-align: left;
 }
 
@@ -539,28 +531,28 @@ body {
 /* The Container Wrapper holding your elements */
 .skills-container {
   display: grid;
-  /* Auto-fits columns dynamically: 3 on desktop, 2 on tablet, 1 on mobile */
+  
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem; /* Creates perfect uniform spacing between your cards */
-  margin-top: 3rem; /* Pushes the grid down slightly from the main title */
+  gap: 1.5rem; 
+  margin-top: 3rem; 
 }
 
 /* Individual Skill Card Blocks */
 .skill {
   background-color: var(--color-surface);
-  border: 1px solid var(--color-border); /* Soft card border */
-  border-radius: 0.75rem;     /* Clean rounded card corners */
+  border: 1px solid var(--color-border); 
+  border-radius: 0.75rem;     
   padding: 1.75rem;
-  text-align: left;           /* Left-aligns card text for a cleaner visual anchor */
-  box-shadow: var(--shadow-card); /* Subtle smooth shadow */
-  transition: all 0.25s ease-in-out; /* Smooth transition framework for interactions */
+  text-align: left;           
+  box-shadow: var(--shadow-card); 
+  transition: all 0.25s ease-in-out; 
 }
 
 /* Interactive Hover States */
 .skill:hover {
-  transform: translateY(-4px); /* Subtle premium upward lift */
-  border-color: var(--color-accent);       /* Border lights up with your primary theme color */
-  box-shadow: var(--shadow-card-hover); /* Adds a soft radiant shadow */
+  transform: translateY(-4px); 
+  border-color: var(--color-accent);       
+  box-shadow: var(--shadow-card-hover); 
 }
 
 /* Skill Titles (h3) */
@@ -568,14 +560,14 @@ body {
   font-size: 1.25rem;
   font-weight: 600;
   color: var(--color-text-primary);
-  margin: 0 0 0.5rem 0; /* Tight spacing layout directly above descriptions */
+  margin: 0 0 0.5rem 0; 
 }
 
 /* Skill Descriptions (p) */
 .skill p {
   font-size: 0.95rem;
   line-height: 1.6;
-  color: var(--color-text-muted); /* Clean secondary typography slate color */
+  color: var(--color-text-muted); 
   margin: 0;
 }
 
@@ -602,8 +594,7 @@ body {
   font-weight: 700;
 }
 
-/* "Next Skills to Learn" card gets a distinct, dashed treatment
-   so it reads as a roadmap, not a claimed current skill */
+/* Next Skills to Learn*/
 .skill-next {
   background-color: var(--color-surface-muted);
   border: 1px dashed var(--color-border-strong);
@@ -620,12 +611,10 @@ body {
 
 /* Projects */
 
-/* Multi-column Grid Layout for Projects */
 .projects-container {
   display: grid;
-  /* Automatically wraps cards based on the screen width */
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem; /* Generous breathing room between project cards */
+  gap: 2rem; 
   margin-top: 3rem;
 }
 
@@ -635,10 +624,10 @@ body {
   border: 1px solid var(--color-border);
   border-radius: 0.75rem;
   padding: 2rem;
-  text-align: left; /* Alignment style for content readability */
+  text-align: left; 
   box-shadow: var(--shadow-card);
   display: flex;
-  flex-direction: column; /* Stacks text on top, buttons on the bottom */
+  flex-direction: column; 
   justify-content: space-between;
   transition: all 0.25s ease-in-out;
 }
@@ -646,7 +635,7 @@ body {
 /* Premium Card Lift Hover Effect */
 .project:hover {
   transform: translateY(-5px);
-  border-color: var(--color-accent); /* Lights up with your primary theme blue */
+  border-color: var(--color-accent); 
   box-shadow: 0 12px 25px -5px var(--color-accent-shadow-soft);
 }
 
@@ -663,8 +652,8 @@ body {
   font-size: 0.95rem;
   line-height: 1.6;
   color: var(--color-text-secondary);
-  margin: 0 0 1.5rem 0; /* Pushes button downward uniformly */
-  flex-grow: 1; /* Ensures buttons line up evenly across varying text heights */
+  margin: 0 0 1.5rem 0; 
+  flex-grow: 1; 
 }
 
 /* Interactive Link Button */
@@ -672,12 +661,12 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  align-self: flex-start; /* Keeps button proportional instead of stretching */
+  align-self: flex-start; 
   padding: 0.5rem 1.25rem;
   font-size: 0.9rem;
   font-weight: 600;
-  color: var(--color-accent); /* Theme Blue color text */
-  background-color: var(--color-accent-soft-bg); /* Very soft light blue fill */
+  color: var(--color-accent); 
+  background-color: var(--color-accent-soft-bg); 
   border-radius: 0.375rem;
   text-decoration: none;
   transition: all 0.2s ease-in-out;
@@ -759,11 +748,11 @@ body {
 
 /* Contact Me Section */
 .contact {
-  background-color: var(--color-contact-bg); /* Switches to Dark Mode block for high visual contrast */
+  background-color: var(--color-contact-bg); 
   color: var(--color-contact-text);
   border-radius: 1rem;
-  padding: 4rem 2rem !important; /* Forces layout inner space padding overrides */
-  margin: 4rem auto; /* Separates it from sections cleanly */
+  padding: 4rem 2rem !important; 
+  margin: 4rem auto; 
   transition: background-color 0.25s ease;
 }
 
@@ -774,7 +763,7 @@ body {
 
 /* Contact Intro Statement */
 .contact p:first-of-type {
-  color: var(--color-contact-intro); /* Muted reading gray-blue */
+  color: var(--color-contact-intro); 
   margin-bottom: 2rem;
 }
 
@@ -787,7 +776,7 @@ body {
 
 /* Contact External Links Styling */
 .contact a {
-  color: var(--color-contact-link); /* Brilliant high-contrast cyan blue for clear dark reading */
+  color: var(--color-contact-link); 
   text-decoration: none;
   font-weight: 600;
   border-bottom: 1px dashed transparent;
@@ -796,7 +785,7 @@ body {
 
 .contact a:hover {
   color: var(--color-contact-link-hover);
-  border-bottom-color: var(--color-contact-link-hover); /* Draws a nice dashed accent highlight on hover */
+  border-bottom-color: var(--color-contact-link-hover);
 }
 
 
@@ -925,11 +914,7 @@ footer p {
 }
 
 
-/* =========================================================
-   RESPONSIVE DESIGN
-   Three breakpoints only — tablet, phone, and small phone —
-   each rule declared once at the smallest width it applies from.
-   ========================================================= */
+/* RESPONSIVE DESIGN */
 
 html,
 body {

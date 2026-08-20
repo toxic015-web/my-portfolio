@@ -1,0 +1,20 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="avatarTitle">
+  <title id="avatarTitle">Domingo Gallemit &mdash; avatar placeholder</title>
+
+  <defs>
+    <linearGradient id="avatarBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+  </defs>
+
+  <circle cx="100" cy="100" r="98" fill="url(#avatarBg)" stroke="#2563eb" stroke-width="3" />
+
+  <!-- Simple generic person silhouette -->
+  <circle cx="100" cy="82" r="34" fill="#2563eb" opacity="0.9" />
+  <path d="M40 172c4-38 30-58 60-58s56 20 60 58c-17 14-38 22-60 22s-43-8-60-22z" fill="#2563eb" opacity="0.9" />
+
+  <!-- Subtle "code brackets" accent to signal developer, not just generic profile -->
+  <text x="100" y="112" font-family="'JetBrains Mono', monospace" font-size="26" font-weight="600"
+        fill="#0f172a" text-anchor="middle" opacity="0.55">&lt;/&gt;</text>
+</svg>

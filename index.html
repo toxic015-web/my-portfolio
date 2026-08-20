@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+    <title>Domingo Gallemit | Python Backend Developer</title>
+
+    <meta name="description" content="Domingo Gallemit — Python Backend Developer building REST APIs with FastAPI, SQL, and Git. Background in business systems, Microsoft Dynamics 365 Business Central, and data management.">
+    <meta name="keywords" content="Python Backend Developer, Python Developer, FastAPI, REST API, Backend Development, Software Developer">
+    <meta name="author" content="Domingo Gallemit">
+
+    <!-- Open Graph / social sharing -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Domingo Gallemit | Python Backend Developer">
+    <meta property="og:description" content="Python Backend Developer building REST APIs with FastAPI, SQL, and Git — with a background in business systems and data management.">
+    <meta property="og:image" content="./assets/avatar-placeholder.svg">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Domingo Gallemit | Python Backend Developer">
+    <meta name="twitter:description" content="Python Backend Developer building REST APIs with FastAPI, SQL, and Git — with a background in business systems and data management.">
+
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
+
+    <link rel="stylesheet" href="style.css?v=20260820">
+
+    <!-- Applies saved/preferred theme before first paint to avoid a light/dark flash -->
+    <script>
+        (function () {
+            var saved = localStorage.getItem('theme');
+            var theme = saved || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+            document.documentElement.setAttribute('data-theme', theme);
+        })();
+    </script>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <a href="#home" class="logo" aria-label="Domingo Gallemit — Home">
+                <span class="logo-mark" aria-hidden="true">DJ</span>
+                <span class="logo-text">.dev</span>
+            </a>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-controls">
+                <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch to light mode">
+                    <!-- Sun icon (shown in dark mode, click to go light) -->
+                    <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="12" cy="12" r="4"></circle>
+                        <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path>
+                    </svg>
+                    <!-- Moon icon (shown in light mode, click to go dark) -->
+                    <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+
+                <button id="nav-toggle" class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+
+        <div class="hero-inner">
+
+            <div class="hero-avatar">
+                <img src="./assets/Avatar.jpg" alt="Domingo Gallemit" id="avatar-img">
+            </div>
+
+            <div class="hero-text">
+                <p class="small-text">Hello, I'm</p>
+
+                <h1>Domingo R. Gallemit JR</h1>
+
+                <h2>Python Backend Developer | Business Systems & Data Management</h2>
+
+                <p>
+                    Building practical backend applications with Python, REST APIs, databases, and Git, supported by experience in 
+                    Business Central, POS systems, data management, troubleshooting, and accounting systems.
+                </p>
+
+                <div class="buttons">
+                     <a href="#projects" class="btn">View My Projects</a>
+                    <!-- <a href="#contact" class="btn secondary">Contact Me</a> -->
+                    <a href="./assets/resume.pdf" download="Domingo_Gallemit_Resume.pdf" class="btn">Download Resume</a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- About -->
+    <section id="about" class="section">
+
+        <h2>About Me</h2>
+
+        <div class="about-content">
+            <p>
+                I'm an Information Technology graduate with over five years of hands-on experience supporting
+                business-critical systems &mdash; from Microsoft Dynamics 365 Business Central administration to
+                POS operations and sales data reconciliation. That work put me close to how real software actually
+                gets used: I've spent years troubleshooting system issues, maintaining master data, and making sure
+                transaction records stay accurate across accounting, finance, and IT teams.
+            </p>
+
+            <p>
+                That experience is what's pulling me toward backend development. I've seen firsthand how much a
+                well-built system matters &mdash; and how painful a poorly built one is to support. So I'm now
+                building that skillset directly: Python, FastAPI, REST API design, SQL, and Git, with a growing
+                focus on writing the kind of backend code I used to depend on from the other side.
+            </p>
+
+            <p>
+                I enjoy the problem-solving side of this most &mdash; figuring out why something breaks, designing
+                a clean data model, or getting an API endpoint to behave exactly the way it should. I'm not
+                claiming to be a senior engineer. I'm a developer with real operational experience who is actively
+                and seriously building toward a backend role, one project at a time.
+            </p>
+        </div>
+
+    </section>
+
+
+    <!-- Experience -->
+    <section id="experience" class="section">
+
+        <h2>Experience</h2>
+
+        <div class="experience-container">
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <h3>Accounting System Officer</h3>
+                    <span class="experience-date">June 2025 &ndash; August 2026</span>
+                </div>
+                <p class="experience-company">Belo Medical Group</p>
+                <p>
+                    Administer and support Microsoft Dynamics 365 Business Central for daily accounting operations.
+                    Manage employee, vendor, and master data integrity; perform user access administration and
+                    security controls; provide first-level troubleshooting for system and data issues; configure
+                    and maintain POS environments including pricing, tender types, and payment mode setups.
+                </p>
+                <p class="experience-relevance">
+                    &rarr; Backend-relevant: data integrity and validation, system troubleshooting, access control,
+                    working directly with structured business data &mdash; the same instincts that go into
+                    designing clean APIs and database schemas.
+                </p>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <h3>Tax Operations Specialist</h3>
+                    <span class="experience-date">November 2020 &ndash; May 2025</span>
+                </div>
+                <p class="experience-company">Belo Medical Group</p>
+                <p>
+                    Reconciled daily sales collections against POS transaction records across terminals to ensure
+                    data accuracy. Investigated and resolved reporting discrepancies by coordinating with IT and
+                    Treasury teams. Finalized transaction data for regulatory tax reporting requirements.
+                </p>
+                <p class="experience-relevance">
+                    &rarr; Backend-relevant: data reconciliation and validation at scale, cross-system
+                    troubleshooting, precision with structured records under reporting deadlines.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+
+        <h2>My Skills</h2>
+
+        <div class="skills-container">
+
+            <div class="skill">
+                <h3>Backend</h3>
+                <ul>
+                    <li>Python</li>
+                    <li>FastAPI</li>
+                    <li>REST API Design</li>
+                    <li>CRUD Operations</li>
+                    <li>Pydantic (Data Validation)</li>
+                </ul>
+            </div>
+
+            <div class="skill">
+                <h3>Database</h3>
+                <ul>
+                    <li>SQL</li>
+                    <li>SQLite</li>
+                    <li>Database Design</li>
+                </ul>
+            </div>
+
+            <div class="skill">
+                <h3>Tools</h3>
+                <ul>
+                    <li>Git</li>
+                    <li>GitHub</li>
+                    <li>Visual Studio Code</li>
+                    <li>Postman</li>
+                </ul>
+            </div>
+
+            <div class="skill">
+                <h3>Business Systems</h3>
+                <ul>
+                    <li>Microsoft Dynamics 365 Business Central</li>
+                    <li>LS Central (POS System)</li>
+                    <li>Data Management</li>
+                    <li>Troubleshooting</li>
+                </ul>
+            </div>
+
+            <div class="skill">
+                <h3>Front End</h3>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </div>
+
+            <div class="skill skill-next">
+                <h3>Next Skills to Learn</h3>
+                <ul>
+                    <li>PostgreSQL</li>
+                    <li>Docker</li>
+                    <li>Automated Testing</li>
+                    <li>Deployment / CI-CD</li>
+                </ul>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+
+        <h2>My Projects</h2>
+
+        <div class="projects-container">
+
+            <div class="project project-featured">
+                <div class="project-tag">Featured Backend Project</div>
+                <h3>Employee Management API</h3>
+
+                <p>
+                    A RESTful backend service built with FastAPI for managing employee records &mdash; created to
+                    practice real-world API design patterns: request validation, structured data models, and full
+                    CRUD workflows rather than a single-file script.
+                </p>
+
+                <ul class="project-features">
+                    <li>Full CRUD endpoints (Create, Read, Update, Delete) for employee records</li>
+                    <li>Request/response validation with Pydantic models</li>
+                    <li>Proper HTTP status codes and error handling (e.g. 404 on missing records)</li>
+                    <li>Clean separation between API routes and data models</li>
+                </ul>
+
+                <p class="project-tech"><strong>Tech:</strong> Python, FastAPI, Pydantic, REST API</p>
+
+                <a href="https://github.com/toxic015-web" class="project-link">View on GitHub</a>
+            </div>
+
+
+            <div class="project">
+                <h3>Personal Portfolio Website</h3>
+
+                <p>
+                    This site &mdash; designed and built from scratch with HTML, CSS, and JavaScript. Includes a
+                    responsive layout, mobile navigation, and semantic, accessible markup.
+                </p>
+
+                <p class="project-tech"><strong>Tech:</strong> HTML, CSS, JavaScript</p>
+
+                <a href="https://github.com/toxic015-web" class="project-link">View on GitHub</a>
+            </div>
+
+
+            <div class="project project-progress">
+                <div class="project-tag project-tag-muted">In Progress</div>
+                <h3>More Projects Coming Soon</h3>
+
+                <p>
+                    Currently building out additional backend projects &mdash; including database-backed APIs and
+                    authentication &mdash; as part of an ongoing, active learning process.
+                </p>
+
+                <a href="https://github.com/toxic015-web" class="project-link">Follow Along on GitHub</a>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Backend Development Journey -->
+    <section id="roadmap" class="section">
+
+        <h2>Backend Development Journey</h2>
+
+        <div class="roadmap-container">
+
+            <div class="roadmap-item done">
+                <span class="roadmap-status">&#10003;</span>
+                <div class="roadmap-text">
+                    <strong>Python &amp; REST API Fundamentals</strong>
+                    <span>Core language, HTTP concepts, and API design basics</span>
+                </div>
+            </div>
+
+            <div class="roadmap-item done">
+                <span class="roadmap-status">&#10003;</span>
+                <div class="roadmap-text">
+                    <strong>FastAPI &amp; CRUD Development</strong>
+                    <span>Built full CRUD workflows with Pydantic validation</span>
+                </div>
+            </div>
+
+            <div class="roadmap-item learning">
+                <span class="roadmap-status">&bull;</span>
+                <div class="roadmap-text">
+                    <strong>SQL &amp; PostgreSQL</strong>
+                    <span>Currently strengthening database design and query skills</span>
+                </div>
+            </div>
+
+            <div class="roadmap-item upcoming">
+                <span class="roadmap-status">&middot;</span>
+                <div class="roadmap-text">
+                    <strong>Authentication &amp; Testing</strong>
+                    <span>JWT auth, automated tests with pytest</span>
+                </div>
+            </div>
+
+            <div class="roadmap-item upcoming">
+                <span class="roadmap-status">&middot;</span>
+                <div class="roadmap-text">
+                    <strong>Docker &amp; Deployment</strong>
+                    <span>Containerizing and shipping backend services</span>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- GitHub CTA -->
+    <section class="section github-cta">
+
+        <h2>Explore My Code</h2>
+
+        <p>
+            See my backend projects, API development work, and continuous learning journey on GitHub.
+        </p>
+
+        <a href="https://github.com/toxic015-web" target="_blank" rel="noopener" class="btn">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.09 3.29 9.4 7.86 10.93.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.04 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.58.23 2.75.11 3.04.74.81 1.18 1.83 1.18 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.07.78 2.16 0 1.56-.01 2.82-.01 3.2 0 .31.2.68.8.56A10.52 10.52 0 0 0 23.5 12c0-6.35-5.15-11.5-11.5-11.5z"/>
+            </svg>
+            View GitHub Profile
+        </a>
+
+    </section>
+
+
+    <!-- Contact -->
+    <section id="contact" class="section contact">
+
+        <h2>Contact Me</h2>
+
+        <p>
+            Interested in working together or discussing a project?
+        </p>
+
+        <p>Email: <a href="mailto:dgallemit15@gmail.com">dgallemit15@gmail.com</a></p>
+
+        <p>
+            GitHub:
+            <a href="https://github.com/toxic015-web" target="_blank" rel="noopener">github.com/toxic015-web</a>
+        </p>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Domingo R. Gallemit Jr. All Rights Reserved.</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
